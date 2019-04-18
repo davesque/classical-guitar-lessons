@@ -25,6 +25,10 @@ musicVoiceOne = \relative {
   c4. a4 r8
 
   f'8.-2\2 e16-1\2 f8-2\2\glissando a4-2\2\glissando f8-2\2
+  e8.-2\2 dis16-1\2 e8-2\2\glissando a4-2\2\glissando e8-2\2
+
+  e8\2\glissando d8-2 b8-0 d8-3 c8-1 a8-2
+  c4. \grace {b16_( d c} b8) r8 r8
 }
 
 musicVoiceTwo = \relative {
@@ -40,7 +44,7 @@ musicVoiceTwo = \relative {
   a4. a4.
 
   e4. a4.
-  e4. r4.
+  e2.
 }
 
 \score {
