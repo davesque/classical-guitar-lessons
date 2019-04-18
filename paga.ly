@@ -44,7 +44,16 @@ musicVoiceOne = \relative {
   \once \set stringNumberOrientations = #'(up)  % Workaround for weird finger number placement
   <c\3-1 c'-4>4. <a\3 a'>4 r8
 
+  \once \override StringNumber.transparent = ##f
+  \acciaccatura g'8-3\1 f8.-1 e16-0 f8-1 \acciaccatura gis8-1 a4-2
+  \once \override StringNumber.transparent = ##f
+  f8-3\2
+  e8.-2\2 dis16-1\2 e8-2\2\glissando a4-2\2\glissando e8-2\2
 
+  e8\2 d-2_( b-0) c-1_( b-0) a-2
+  <b, e gis b e>4 r8 r4.
+
+  \bar "|."
 }
 
 musicVoiceTwo = \relative {
@@ -74,7 +83,9 @@ musicVoiceTwo = \relative {
   a a
 
   e a4 f8
-  e2.
+  e4 r8 r4.
+
+  \bar "|."
 }
 
 \score {
