@@ -1,5 +1,17 @@
 \version "2.18.2"
 
+% Remove "engraved by" markup
+\paper {
+  oddFooterMarkup = ""
+  evenFooterMarkup = ""
+}
+
+\header {
+  title = "Romanze"
+  subtitle = "from Grande Sonata M.S. 3 in A Major"
+  composer = "N. Paganini"
+}
+
 musicVoiceOne = \relative {
   \override StringNumber.transparent = ##t
 
