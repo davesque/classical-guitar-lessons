@@ -18,11 +18,13 @@ musicVoiceOne = \relative {
   \voiceOne
 
   \once \override StringNumber.transparent = ##f
-  e'8.-1\2 f16-2\2 e8-1\glissando a4-2\glissando f8-2
-  e4 e8 e8 d8-3 c8-1
+  e'8.-1\2 f16-2\2 e8-1\2\glissando a4-2\2\glissando f8-2\2
+  e4-1\2 e8\2 e8\2 d8-3\2 c8-1\2
 
-  b8.-0 c16-1 b8-0 e4-3\glissando d8-3
+  b8.-0 c16-1 b8-0 e4-3\2\glissando d8-3
   c4. a4 r8
+
+  f'8.-2\2 e16-1\2 f8-2\2\glissando a4-2\2\glissando f8-2\2
 }
 
 musicVoiceTwo = \relative {
