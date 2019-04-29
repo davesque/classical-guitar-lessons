@@ -12,11 +12,14 @@
   composer = "N. Paganini"
 }
 
+#(define RH rightHandFinger)
+
 musicVoiceOne = \relative {
   \override StringNumber.transparent = ##t
 
   \set stringNumberOrientations = #'(left)
   \set fingeringOrientations = #'(left)
+  \set strokeFingerOrientations = #'(left)
 
   \voiceOne
 
@@ -51,13 +54,27 @@ musicVoiceOne = \relative {
   e8.-2\2 dis16-1\2 e8-2\2\glissando a4-2\2\glissando e8-2\2
 
   e8\2 d-2_( b-0) c-1_( b-0) a-2
-  <b, e gis b e>4 r8 r4.
+  <b, e gis b e>4 r8\fermata r4.^\markup { \italic {Cadenz} }
+
+  % 17
+
+  \break
+
+  c'4-1-\RH #3 e8 \acciaccatura d-4 c b c
+  cis4-2 d8-3 b,16-1 a''-4 g-2 fis-2 f-1 d-3
+
+  c4-1-\RH #3 e8 \acciaccatura d-4 c b c
+  cis4-2 d8-3 b,16-1 a''-4 g-2 fis-2 f-1 d-3
 
   \bar "|."
 }
 
 musicVoiceTwo = \relative {
   \voiceTwo
+
+  \set stringNumberOrientations = #'(left)
+  \set fingeringOrientations = #'(left)
+  \set strokeFingerOrientations = #'(left)
 
   a,4. a
   a a
@@ -84,6 +101,14 @@ musicVoiceTwo = \relative {
 
   e a4 f8
   e4 r8 r4.
+
+  % 17
+
+  c'32[-3-\RH #1 g'-\RH #2 e-\RH #1 g]-\RH #2 c,[ g' e g] c,[ g' e g] c,[ g' e g] c,[ g' e g] c,[ g' e g]
+  b,[-1 g' d g] b,[ g' d g] b,[ g' d g] \once \hideNotes r4.
+
+  c,32[-3-\RH #1 g'-\RH #2 e-\RH #1 g]-\RH #2 c,[ g' e g] c,[ g' e g] c,[ g' e g] c,[ g' e g] c,[ g' e g]
+  b,[-1 g' d g] b,[ g' d g] b,[ g' d g] \once \hideNotes r4.
 
   \bar "|."
 }
