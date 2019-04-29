@@ -9,7 +9,7 @@ It includes sheet music for exercises and repertoire typeset with
 Visit the LilyPond downloads page [here](http://lilypond.org/download.html) to
 get a distribution for your platform.
 
-### Using lilypond from the command line on macOS
+### Using LilyPond from the command line on macOS
 
 After running the LilyPond installer, create a bash script with the following
 content named `lilypond`:
