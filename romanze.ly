@@ -63,8 +63,14 @@ musicVoiceOne = \relative {
   c'4-1-\RH #3 e8 \acciaccatura d-4 c b c
   cis4-2 d8-3 b,16-1 a''-4 g-2 fis-2 f-1 d-3
 
-  c4-1-\RH #3 e8 \acciaccatura d-4 c b c
+  c4-1 e8 \acciaccatura d-4 c b c
   cis4-2 d8-3 b,16-1 a''-4 g-2 fis-2 f-1 d-3
+
+  c4 g'8 g f e
+  e4-0 d8-4 f,,16 cis''-2 d-3 e-0 f-1 a-4
+
+  c,4-1 c8 d-4 g-4 f
+  f4-1 e8 a,,16 <e'-2 e'> <f-3 f'-1> <g g'-4> \glissando <a-1 a'-4> \glissando <b\3 b'> \glissando
 
   \bar "|."
 }
@@ -107,8 +113,14 @@ musicVoiceTwo = \relative {
   c'32[-3-\RH #1 g'-\RH #2 e-\RH #1 g]-\RH #2 c,[ g' e g] c,[ g' e g] c,[ g' e g] c,[ g' e g] c,[ g' e g]
   b,[-1 g' d g] b,[ g' d g] b,[ g' d g] \once \hideNotes r4.
 
-  c,32[-3-\RH #1 g'-\RH #2 e-\RH #1 g]-\RH #2 c,[ g' e g] c,[ g' e g] c,[ g' e g] c,[ g' e g] c,[ g' e g]
+  c,32[-3 g' e g] c,[ g' e g] c,[ g' e g] c,[ g' e g] c,[ g' e g] c,[ g' e g]
   b,[-1 g' d g] b,[ g' d g] b,[ g' d g] \once \hideNotes r4.
+
+  c,32[-3 g' e g] c,[ g' e g] c,[ g' e g] e,[ g' e g] e,[ g' e g] e,[ g' e g]
+  f,32[-1 f'-3 a, f'] f,[ f' a, f'] f,[ f' a, f'] \once \hideNotes r4.
+
+  g,32[-3 e'-2 c-4 e] g,[ e' c e] g,[ e' c e] g,[ d' b d] g,[ d' b d] g,[ d' b d]
+  a32[ a'-3 e-2 a] a,[ a' e a] a,[ a' e a] \once \hideNotes r4.
 
   \bar "|."
 }
