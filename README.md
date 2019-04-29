@@ -9,6 +9,17 @@ It includes sheet music for exercises and repertoire typeset with
 Visit the LilyPond downloads page [here](http://lilypond.org/download.html) to
 get a distribution for your platform.
 
+## Building the sheet music
+
+Build the sheet music with the included `Makefile`:
+```bash
+make build
+```
+
+This assumes there is an executable called `lilypond` in your path.  For mac
+users, see below for instructions on how to create a wrapper script for
+LilyPond.
+
 ### Using LilyPond from the command line on macOS
 
 After running the LilyPond installer, create a bash script with the following
@@ -28,8 +39,3 @@ chmod u+x lilypond
 ```
 
 Finally, place the script somewhere on your path.
-
-Now, you can use the included `Makefile` to build the sheet music:
-```bash
-make build
-```
